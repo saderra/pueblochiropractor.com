@@ -2,9 +2,58 @@
 <html lang="en">
 {% include "components/head/head.njk" %}
 
-<body>
+<body class="text-stone-800">
    
    {% include "components/header/header.njk" %}
+   {% if home %}
+
+     <!-- HERO -->
+  <section class="hero-bg relative py-36 px-6 text-center">
+    <!-- Dark overlay so text stays readable -->
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tight text-white mb-8 drop-shadow-lg">
+        Welcome To The Center<br class="hidden sm:block" /> For Alternative Medicine
+      </h2>
+      <a
+        href="https://healthctr.org/CAMforms"
+        class="inline-block bg-white text-teal-800 font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full shadow-lg hover:bg-teal-50 hover:shadow-xl transition-all duration-200"
+      >
+        Patient Forms
+      </a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-stone-700 mb-14 tracking-tight">Testimonials</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+
+      <figure class="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between border border-stone-100">
+        <blockquote class="text-stone-600 text-base leading-relaxed italic mb-6">
+          "I have no more pain and have full range of motion. I feel he [Dr. Davis] is out to help people and not out to make money… I would HIGHLY recommend him and his practice."
+        </blockquote>
+        <figcaption class="text-sm font-semibold text-teal-700 tracking-wide">— Nicole Hughbanks</figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between border border-stone-100">
+        <blockquote class="text-stone-600 text-base leading-relaxed italic mb-6">
+          "Thank you so much for getting me back in action!!! Highly recommend."
+        </blockquote>
+        <figcaption class="text-sm font-semibold text-teal-700 tracking-wide">— Brandon Morris</figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between border border-stone-100">
+        <blockquote class="text-stone-600 text-base leading-relaxed italic mb-6">
+          "Always professional &amp; kind, Dr. Davis is hands down the best chiropractor I have been to in my life. Never any pressure to reschedule and obviously knows what he is doing. The staff is always helpful &amp; kind as well. I won't go anywhere else!"
+        </blockquote>
+        <figcaption class="text-sm font-semibold text-teal-700 tracking-wide">— Janessa Lebow</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+   {% else %}
 
    <div class="container">
    
@@ -14,6 +63,16 @@
       </section>
 
    </div>
+
+    {% endif %}
+
+<!-- FOOTER -->
+  <footer class="bg-stone-100 border-t border-stone-200 text-center py-6 text-xs text-stone-500">
+    <p>
+      Copyright &copy; 2026 &nbsp;|&nbsp;
+      <a href="https://pueblochiropractor.com/privacy/" class="underline hover:text-teal-700 transition-colors">Privacy Policy</a>
+    </p>
+  </footer>
 
 </body>
 </html>

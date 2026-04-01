@@ -1,8 +1,5 @@
 ---
-title: Contact
-eleventyNavigation:
-  key: Contact
-  order: 600
+title: Success
 ---
 
 ## We Have Received Your Message

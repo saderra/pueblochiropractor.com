@@ -13,7 +13,7 @@ eleventyNavigation:
     <div class="flex flex-col gap-4">
       <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-lg bg-stone-200">
         <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID_1"
+          src="https://www.youtube.com/watch?v=zg-Gj6nAQTc"
           title="Advanced Spinal Decompression – Center for Alternative Medicine"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -29,7 +29,7 @@ eleventyNavigation:
     <div class="flex flex-col gap-4">
       <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-lg bg-stone-200">
         <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID_2"
+          src="https://www.youtube.com/watch?v=JhvKrV0Hjnw"
           title="Mechanisms of Action of Acetaminophen and NSAIDs – Pain Management"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

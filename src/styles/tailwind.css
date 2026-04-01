@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { 
+  @apply font-sans;
+}
+
+.brand-font { 
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  @apply brand-font tracking-tight;
+}
+
+/****** MAIN NAVIGATION ***/
+
+ul.main-navigation {
+  @apply brand-font text-base text-neutral-700 font-medium;
+}
+
+ul.main-navigation {
+  @apply brand-font;
+}
+
+ul.main-navigation > li {
+  @apply inline-block float-left;
+}
+
+ul.main-navigation > li > a {
+  @apply block px-2 lg:pl-3 py-7 ml-2 lg:ml-3;
+}
+
+ul.main-navigation > li > ul {
+  @apply w-64 bg-neutral-50 border-t border-neutral-200 text-sm rounded-b-lg;
+}
+
+ul.main-navigation > li > ul > li {
+	@apply border-b;
+}
+
+ul.main-navigation > li > ul a {
+	@apply block pl-6 py-3;
+}
+
+ul.main-navigation > li > ul li:hover {
+	@apply bg-neutral-100;
+}
+
+ul.main-navigation > li > ul > li:last-of-type {
+  @apply border-none rounded-b-lg;
+}
